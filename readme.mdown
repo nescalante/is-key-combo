@@ -1,5 +1,7 @@
 # is-key-combo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nescalante/is-key-combo.svg)](https://greenkeeper.io/)
+
 Do assertions on given key combos and events and returns true if match
 
 ## Install
