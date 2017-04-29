@@ -1,0 +1,30 @@
+{
+  "name": "is-key-combo",
+  "version": "1.0.0",
+  "description": "checks if event is key combo",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "is",
+    "key",
+    "combo"
+  ],
+  "author": "Nicolas Escalante <nlante@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "keycode": "^2.1.8"
+  },
+  "devDependencies": {
+    "mocha": "^3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nescalante/is-key-combo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nescalante/is-key-combo/issues"
+  },
+  "homepage": "https://github.com/nescalante/is-key-combo#readme"
+}
