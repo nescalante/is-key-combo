@@ -36,7 +36,7 @@ function isEqual(arr1, arr2) {
   return arr1.length === arr2.length &&
     arr1.every(function (obj1) {
       return arr2.some(function (obj2) {
-        return obj1 === obj2;
+        return obj1.toLowerCase() === obj2.toLowerCase();
       });
     });
 }

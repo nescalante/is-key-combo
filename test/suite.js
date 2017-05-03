@@ -43,6 +43,22 @@ describe('is-combo-key', function () {
     assert(result);
   });
 
+  it('mayus string', function () {
+    const result = isKeyCombo({
+      metaKey: true,
+      keyCode: 98
+    }, 'CMD+B');
+    assert(result);
+  });
+
+  it('mayus code', function () {
+    const result = isKeyCombo({
+      metaKey: true,
+      keyCode: 90
+    }, 'cmd+z');
+    assert(result);
+  });
+
   it('invalid', function () {
     const result = isKeyCombo({
       ctrlKey: true,

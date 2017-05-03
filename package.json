@@ -4,7 +4,9 @@
   "description": "checks if event is key combo",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags && npm publish"
   },
   "keywords": [
     "is",
