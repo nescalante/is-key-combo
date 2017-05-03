@@ -21,7 +21,7 @@ describe('is-combo-key', function () {
   it('meta', function () {
     const result = isKeyCombo({
       metaKey: true,
-      keyCode: 65
+      keyCode: 97
     }, 'cmd+a');
     assert(result);
   });
@@ -29,8 +29,8 @@ describe('is-combo-key', function () {
   it('alt', function () {
     const result = isKeyCombo({
       altKey: true,
-      keyCode: 9
-    }, 'alt+tab');
+      keyCode: 32
+    }, 'alt+space');
     assert(result);
   });
 
@@ -38,7 +38,7 @@ describe('is-combo-key', function () {
     const result = isKeyCombo({
       ctrlKey: true,
       shiftKey: true,
-      keyCode: 66
+      keyCode: 98
     }, 'cmd+shift+b');
     assert(result);
   });
@@ -46,7 +46,7 @@ describe('is-combo-key', function () {
   it('invalid', function () {
     const result = isKeyCombo({
       ctrlKey: true,
-      keyCode: 66
+      keyCode: 98
     }, 'alt+b');
     assert(!result);
   });

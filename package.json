@@ -13,9 +13,6 @@
   ],
   "author": "Nicolas Escalante <nlante@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "keycode": "^2.1.8"
-  },
   "devDependencies": {
     "mocha": "^3.3.0"
   },

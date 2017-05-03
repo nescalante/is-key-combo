@@ -1,10 +1,14 @@
-const keycode = require('keycode');
+const keymap = {
+  13: 'enter',
+  27: 'esc',
+  32: 'space'
+};
 
 module.exports = isKeyCombo;
 
 function isKeyCombo(e, combo) {
   const keys = [];
-  const key = keycode(e);
+  const key = getKey(e.which || e.keyCode || e.charCode);
   const comboArr = combo.split('+');
 
   if (e.shiftKey) {
@@ -22,6 +26,10 @@ function isKeyCombo(e, combo) {
   keys.push(key);
 
   return isEqual(keys, comboArr);
+}
+
+function getKey(code) {
+  return keymap[code] || String.fromCharCode(code);
 }
 
 function isEqual(arr1, arr2) {
