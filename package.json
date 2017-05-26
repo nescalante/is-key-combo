@@ -1,10 +1,12 @@
 {
   "name": "is-key-combo",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "checks if event is key combo",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags && npm publish"
   },
   "keywords": [
     "is",
@@ -13,9 +15,6 @@
   ],
   "author": "Nicolas Escalante <nlante@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "keycode": "^2.1.8"
-  },
   "devDependencies": {
     "mocha": "^3.3.0"
   },
