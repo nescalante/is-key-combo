@@ -1,6 +1,6 @@
 {
   "name": "is-key-combo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "checks if event is key combo",
   "main": "index.js",
   "scripts": {
