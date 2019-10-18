@@ -1,4 +1,4 @@
-const keymap = {
+var keymap = {
   13: 'enter',
   27: 'esc',
   32: 'space'
@@ -7,9 +7,9 @@ const keymap = {
 module.exports = isKeyCombo;
 
 function isKeyCombo(e, combo) {
-  const keys = [];
-  const key = getKey(e.which || e.keyCode || e.charCode);
-  const comboArr = combo.split('+');
+  var keys = [];
+  var key = getKey(e.which || e.keyCode || e.charCode);
+  var comboArr = combo.split('+');
 
   if (e.shiftKey) {
     keys.push('shift');
